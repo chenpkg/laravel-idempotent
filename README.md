@@ -10,7 +10,7 @@
 ## Installation
 
 ```shell
-$ composer require chenpkg/idempotent
+$ composer require chenpkg/laravel-idempotent
 ```
 
 ## Usage
