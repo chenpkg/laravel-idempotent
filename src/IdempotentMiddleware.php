@@ -92,7 +92,8 @@ class IdempotentMiddleware
         $user = $this->resolveUser();
 
         $idempotentKey = $user ? $user->getAuthIdentifier().request() : request()->ip().request();
-        $idempotentKey = sha1($idempotentKey);
+        // $idempotentKey = sha1($idempotentKey);
+        $idempotentKey = md5($idempotentKey);
 
         request()->headers->set(config('idempotent.header_name'), $idempotentKey);
 
