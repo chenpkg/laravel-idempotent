@@ -1,5 +1,5 @@
 {
-    "name": "chenpkg\/idempotent",
+    "name": "chenpkg\/laravel-idempotent",
     "description": "laravel idempotent middleware",
     "license": "MIT",
     "authors": [
