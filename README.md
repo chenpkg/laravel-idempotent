@@ -29,6 +29,8 @@ Route::group(['middleware' => 'idempotent'], function () {
 });
 ```
 
+> 注：请不要直接加在 `App\Http\Kernel` 的 `middleware` 里面，由于中间件执行顺序问题，可能导致该组件获取不到当前用户身份标识符 ID
+
 或者你可以将它加入到指定路由中间件组中
 
 ```php
