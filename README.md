@@ -18,7 +18,7 @@ $ composer require chenpkg/laravel-idempotent
 
 发布配置文件
 
-```
+```shell
 $ php artisan vendor:publish --tag="laravel-idempotent"
 ```
 
