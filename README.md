@@ -1,6 +1,6 @@
 <h1 align="left"> Idempotent </h1>
 
-<p align="left"> laravel 幂等中间件，防止同一时间多次请求。</p>
+<p align="left"> laravel 幂等中间件，防止客户端同一时间请求多次。</p>
 
 ## Requirement
 
