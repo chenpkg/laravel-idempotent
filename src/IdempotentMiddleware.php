@@ -43,7 +43,12 @@ class IdempotentMiddleware
      */
     public function terminate($request, $response)
     {
-        Cache::forget($this->getCacheKey($request->header($this->config['header_name'])));
+        // 修复在其他中间件出现异常，config 获取不到报错的问题
+        if (! $this->config || ! $request->header($this->config['header_name'] ?? '')) {
+            return;
+        }
+
+        Cache::forget($this->getCacheKey($request->header($this->config['header_name'] ?? '')));
     }
 
     /**
