@@ -1,5 +1,5 @@
 {
-    "name": "chenpkg\/laravel-idempotent",
+    "name": "chenpkg/laravel-idempotent",
     "description": "laravel idempotent middleware",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^7.0|^8.0",
-        "laravel/framework": "^6.0|^7.0|^8.0"
+        "laravel/framework": "^6.0|^7.0|^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
